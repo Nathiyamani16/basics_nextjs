@@ -1,15 +1,18 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import styles from '@/app/ui/home.module.css'; // Ensure this file exists and has styles
+// import styles from '@/app/ui/home.module.css'; // Ensure this file exists and has styles
 import Image from 'next/image';
-// import AcmeLogo from '@/app/ui/acme-logo'; // Remove if not used
+import AcmeLogo from '@/app/ui/acme-logo'; // Remove if not used
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      {/* Uncomment if styles.shape is defined in home.module.css */}
-      <div className={styles.shape} />
+    
+      {/* <div className={styles.shape} /> */}
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
+      <div className="w-32 text-white md:w-40">
+          <AcmeLogo />
+        </div>
         {/* <Image
           src="/hero-desktop.png"
           width={1000}
